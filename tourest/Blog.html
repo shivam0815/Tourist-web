@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    
+        <img src="3.png" id="image">
+        <!-- <p> Hello I am compass </p> -->
+        <!-- <img src="icon-3329995_1280.jpg" alt="meri_photu png"> -->
+         <h1>Hello</h1>
+
+
+
+<script type="text/javascript">
+    let image = document.getElementById('image');
+    let images = ['.assets/images/1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png',
+        '8.png', '9.png',];
+    setInterval(function () {
+        let random = Math.floor(Math.random() * 9);
+        image.src = images[random];
+    }, 1000)
+</script>
+
+</body>
+</html>
