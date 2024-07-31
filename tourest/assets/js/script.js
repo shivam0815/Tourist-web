@@ -27,8 +27,8 @@ window.addEventListener("scroll", function () {
 
 let change = document.getElementById('change');
     let images = [
-        './assets/images/1.png','8.png', './assets/images/2.png', '3.png', './assets/images/4.png', 
-        '6.png'
+        './assets/images/1.png','8.png',  '3.png', '9.png', 
+        '6.png','7.png'
     ];
     
     setInterval(function () {
