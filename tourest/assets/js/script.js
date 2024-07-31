@@ -24,3 +24,14 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 500 ? goTopBtn.classList.add("active")
     : goTopBtn.classList.remove("active");
 });
+
+let change = document.getElementById('change');
+    let images = [
+        './assets/images/1.png', './assets/images/2.png', '3.png', './assets/images/4.png', 
+        '5.png', '6.png'
+    ];
+    
+    setInterval(function () {
+        let random = Math.floor(Math.random() * images.length);
+        change.src = images[random];
+    }, 1000);
