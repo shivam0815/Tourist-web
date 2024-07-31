@@ -7,6 +7,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #2e2e2e 0%, #1c1c1c 100%);
+    background-size: 200% 200%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,13 +19,13 @@ body {
 
 @keyframes backgroundMove {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 100%;
     }
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 0%;
     }
 }
 
@@ -37,11 +38,12 @@ body {
     width: 100%;
     animation: fadeIn 1s ease-out;
     transform: scale(0.9);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-container:hover {
     transform: scale(1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
 }
 
 .contact-container h2 {
@@ -68,13 +70,14 @@ body {
     background: #1c1c1c;
     color: #e0e0e0;
     font-size: 16px;
-    transition: border-color 0.3s ease, transform 0.3s ease;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input-group input:focus,
 .input-group textarea:focus {
     border-color: #74ebd5;
     transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(116, 235, 213, 0.5);
 }
 
 .input-group label {
@@ -105,13 +108,14 @@ body {
     color: white;
     font-size: 18px;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 0.8s ease-out;
 }
 
 .submit-btn:hover {
     background: #5ed1c1;
     transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(94, 209, 193, 0.5);
 }
 
 @keyframes fadeIn {
